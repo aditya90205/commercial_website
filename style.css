@@ -1,0 +1,226 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+body {
+    background-color: rgb(246, 238, 238);
+}
+
+#navbar ul li {
+    margin: 3px 15px;
+}
+
+/* Navigation Bar:Logo and Image */
+.logo {
+    margin: 30px 40px;
+}
+
+.logo img {
+    height: 55px;
+    /* width: 100px; */
+    margin: -20px -35px;
+    /* padding: 0px  3px;*/
+}
+
+/* Navigation Bar:List Styling */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    top: -6px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+    top: -6px;
+}
+
+
+#navbar ul li {
+    display: flex;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: rgb(25, 25, 26);
+    display: block;
+    padding: 10px 21px;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(177, 194, 194);
+    background-color: rgb(57, 59, 61);
+    border-radius: 7px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../PROJECT-2/bg1.jpg) no-repeat center center/cover;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 23px 23px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+#home h1 {
+    color: rgb(128, 94, 141);
+    text-align: center;
+    font-family: 'Alkalami', serif;
+}
+
+#home p {
+    color: rgb(42, 32, 32);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Alkalami', serif;
+}
+
+/* Secondary Section */
+#services {
+    margin: 10px 28px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid black;
+    margin: 14px 20px;
+    border-radius: 30px;
+    background-color: rgb(233, 206, 206);
+}
+
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.h-secondary {
+    font-size: 19px;
+    padding: 12px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(249, 227, 231);
+    font-family: 'Inter Tight', sans-serif;
+    margin: 14px;
+    cursor: pointer;
+}
+
+.h-primary-centre {
+    text-align: center;
+    margin: 30px;
+    font-size: 42px;
+
+}
+
+
+/* Clients Section */
+#client-section {
+    margin: 65px;
+    height: 324px;
+    ;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 108px;
+    margin: 36px 39px;
+    padding: 9px 34px;
+}
+
+/* #clients .client-item2{
+   height: 100px; */
+
+.h-primary centre {
+    font-family: 'Alkalami', serif;
+}
+
+.client-item {
+    padding: 2px;
+    margin: 2px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../PROJECT-2/5.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 323px;
+    z-index: -1;
+    opacity: 0.4;
+    margin: 0px -629px;
+    padding: 10px 24px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
